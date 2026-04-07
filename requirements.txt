@@ -4,3 +4,4 @@ pymdown-extensions>=10.14,<11
 sphinx
 myst-parser
 sphinx-rtd-theme
+furo
