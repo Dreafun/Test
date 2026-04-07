@@ -1,0 +1,72 @@
+site_name: Scarlet Notes
+site_description: Демонстрационный сайт статей и гайдов
+site_url: https://example.com/
+repo_name: yourname/scarlet-notes
+repo_url: https://github.com/yourname/scarlet-notes
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+    - scheme: slate
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+  font:
+    text: Noto Sans
+    code: JetBrains Mono
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji
+  - pymdownx.keys
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.mark
+
+plugins:
+  - search
+
+nav:
+  - Главная: index.md
+  - Статьи:
+      - Пример атмосферной статьи: guides/moon_library.md
+      - Полигон форматирования: guides/formatting_playground.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourname
