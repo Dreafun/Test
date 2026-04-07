@@ -30,3 +30,10 @@ myst_enable_extensions = ["colon_fence",
 "html_admonition",
 "html_image",
 "tasklist",]
+
+
+html_static_path = ['_static']
+
+html_css_files = [
+    'custom.css',
+]
